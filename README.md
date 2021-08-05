@@ -15,12 +15,12 @@ One of the main concerns of a common fish keeper is lack of knowledge about the 
 - Less movements or odd swimming behaviour
 - Sinking or floating too much
 
-![image](https://user-images.githubusercontent.com/58099828/128254151-35116b31-780f-460c-8378-fca8d3d4a70e.png)
+  ![image](https://user-images.githubusercontent.com/58099828/128254151-35116b31-780f-460c-8378-fca8d3d4a70e.png)
 
 ### Water condition
 One of the main reason for fish diseases is the condition of the water. THe ideal water conditions are displayed in the following table. Changes in water conditions cause parasites, bacteria and varoius other things to grow, and some rise of these conditions(eg: Ammonia) are toxic to fish and cause diseases. 
 
-![image](https://user-images.githubusercontent.com/58099828/128254217-4169d257-2eeb-4c3c-a08b-a59d92ea2717.png)
+  ![image](https://user-images.githubusercontent.com/58099828/128254217-4169d257-2eeb-4c3c-a08b-a59d92ea2717.png)<br/>
   from https://www.aqueon.com/articles/freshwater-aquarium-water-quality
 
 ## System design
@@ -35,6 +35,39 @@ Color changes and abnormalities of the fish are only considered.
 ### Water conditions to be considered
 Not all of the condtions listed above cannot be measured using sensor modules. Some of them need to be measured using specific kits. Therefore only **temperature, pH level, Total dissolved solids count, and turbidity( clearness of the water)** is cosidered. 
 ### Fish breeds and diseases
-8 most common diseases among aquarium fish are considered due to lack of data availability. 18 common fish breeds are inditified which are fallen ill to these diseases. which are listed in `Fish_breeds.txt` and `Diseases.txt`
+8 most common diseases among aquarium fish are considered due to lack of data availability. 17 common fish breeds are inditified which are fallen ill to these diseases. which are listed in `Fish_breeds.txt` and `Diseases.txt`
 
 ## Implementation
+
+### Data
+Data gathered from Google Images, various Facebook groups and pages, and aquarium community websites. Enough data for fish breed classification can be collected but data for diseases are hard to acquire.
+Data colleted till now,
+- Fish breeds: 1136
+- Diseases: 250
+More data will be gathered as the project goes on.
+
+### Sensor node
+**Temperature sensor, pH sensor, turbidity sensor, and TDS sensor** are included along with **ESP32** microcontroller. <br/>ESP32 is selected due to its small size, enough processing power, and Bluetooth and Wifi availability. <br/>
+![nodemcu-esp32](https://user-images.githubusercontent.com/58099828/128307333-e089c246-d157-439c-8022-54a8da8767b8.jpg)
+
+- Temperature sensor <br/>
+  ![temperature](https://user-images.githubusercontent.com/58099828/128306920-1fe1ff5c-5bdf-4a8b-869d-da47a248acd9.jpeg)
+
+- pH sensor <br/>
+  ![ph](https://user-images.githubusercontent.com/58099828/128306926-4fcc8d8f-5a74-49ff-a459-b2dac89308fe.jpg)
+
+- Turbidity sensor <br/>
+  ![turbidity](https://user-images.githubusercontent.com/58099828/128306934-9520d679-d163-47b4-8d98-ae5ac7a02c98.jpg) <br/>
+  
+  In case of a failure to find a sensor module, a basic sensor can be made using following circuit<br/>
+  ![schem](https://user-images.githubusercontent.com/58099828/128307841-72dc4626-e5ef-4ac7-bd66-23556a2f695c.png)<br/>
+
+- TDS sensor <br/>
+  ![tds](https://user-images.githubusercontent.com/58099828/128306947-9c8c16ca-9b9d-4fac-9e7e-f5d8ea3bddb6.png)<br/>
+  
+  Basic sensor circuit<br/>
+  ![ol2eccircuit](https://user-images.githubusercontent.com/58099828/128308328-2bca4169-e3de-4477-8d90-5814e7dce6e2.jpg)
+
+  
+
+
