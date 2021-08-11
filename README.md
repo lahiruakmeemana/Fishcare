@@ -42,8 +42,8 @@ Not all of the condtions listed above cannot be measured using sensor modules. S
 ### Data
 Data gathered from Google Images, various Facebook groups and pages, and aquarium community websites. Enough data for fish breed classification can be collected but data for diseases are hard to acquire.
 Data colleted till now,
-- Fish breeds: 1136
-- Diseases: 250
+- Fish breeds: 1670
+- Diseases: 289
 More data will be gathered as the project goes on.
 
 ### Sensor node
@@ -68,6 +68,13 @@ More data will be gathered as the project goes on.
   Basic sensor circuit<br/>
   ![ol2eccircuit](https://user-images.githubusercontent.com/58099828/128308328-2bca4169-e3de-4477-8d90-5814e7dce6e2.jpg)
 
-  
+### Data Labeling
+![boundingbox](https://user-images.githubusercontent.com/58099828/129083468-037d61e1-32fd-451d-9c17-ca485d0ca21f.jpg)
+![polygon](https://user-images.githubusercontent.com/58099828/129083474-6b6e5c65-5970-484b-a9d9-f6dd2735b2a2.jpg)
+
+Above two approaches are to be tested on few fish breeds and the one gives best resutls will be used to label all the data.
+
+## TimeLine <br/>
+![image](https://user-images.githubusercontent.com/58099828/129080849-8efb84a0-a30f-4434-aab4-05df9f25df07.png) <br/>
 
 
