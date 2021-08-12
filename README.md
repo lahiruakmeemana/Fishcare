@@ -77,4 +77,29 @@ Above two approaches are to be tested on few fish breeds and the one gives best 
 ## TimeLine <br/>
 ![image](https://user-images.githubusercontent.com/58099828/129080849-8efb84a0-a30f-4434-aab4-05df9f25df07.png) <br/>
 
+## Weekly Updates
 
+### Week 1
+
+- Started collecting data for Fish and disease classification. <br/>
+  - *Sources*: <br/>
+    https://www.google.com/imghp?hl=EN <br/>
+    https://www.facebook.com/groups/AquariumKeepers69/?multi_permalinks=2744512122517463c <br/>
+    https://www.facebook.com/groups/FishTankEnablers/?multi_permalinks=1239240096489399 <br/>
+    https://www.facebook.com/groups/Carpnado/?multi_permalinks=3042710135972472 <br/>
+    https://www.facebook.com/groups/bettakeepers/?multi_permalinks=356133915965277 <br/>
+    https://www.facebook.com/groups/154362351866569/?multi_permalinks=805873170048814 <br/>
+    https://www.facebook.com/groups/132870007364711/ <br/>
+    https://www.facebook.com/groups/1509542092636185/?multi_permalinks=2961202860803427 <br/>
+    https://www.myaquariumclub.com/search.html?search_req=search&searchword=photo <br/>
+- Read exsisting solutions research papers
+	- Fish-Pak: Fish Species Dataset from Pakistan for Visual Features Based Classification: https://data.mendeley.com/datasets/n3ydw29sbz/3 <br/>
+	- Fish Disease Detection Using Image Based Machine Learning Technique in Aquaculture: https://www.sciencedirect.com/science/article/pii/S1319157821001063 <br/>
+	Image processing technique to detect fish disease: https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.736.9131&rep=rep1&type=pdf <br/>
+
+### Week 2
+
+- Started Fish data labeling <br/>
+	 - As said above only few breeds are labeled first and test it on classification to select the optimal way.<br/>
+- Started learning Flutter for developping the app.
+- Started implementing sensor node.
