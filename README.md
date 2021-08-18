@@ -57,16 +57,20 @@ More data will be gathered as the project goes on.
   ![ph](https://user-images.githubusercontent.com/58099828/128306926-4fcc8d8f-5a74-49ff-a459-b2dac89308fe.jpg)
 
 - Turbidity sensor <br/>
-  ![turbidity](https://user-images.githubusercontent.com/58099828/128306934-9520d679-d163-47b4-8d98-ae5ac7a02c98.jpg) <br/>
-  
-  In case of a failure to find a sensor module, a basic sensor can be made using following circuit<br/>
+
+  ![turbidity](https://user-images.githubusercontent.com/58099828/128306934-9520d679-d163-47b4-8d98-ae5ac7a02c98.jpg)
   ![schem](https://user-images.githubusercontent.com/58099828/128307841-72dc4626-e5ef-4ac7-bd66-23556a2f695c.png)<br/>
+  In case of a failure to find a sensor module, a basic sensor can be made using following circuit<br/>
 
 - TDS sensor <br/>
-  ![tds](https://user-images.githubusercontent.com/58099828/128306947-9c8c16ca-9b9d-4fac-9e7e-f5d8ea3bddb6.png)<br/>
-  
+ 
+  ![tds](https://user-images.githubusercontent.com/58099828/128306947-9c8c16ca-9b9d-4fac-9e7e-f5d8ea3bddb6.png)
+  ![ol2eccircuit](https://user-images.githubusercontent.com/58099828/128308328-2bca4169-e3de-4477-8d90-5814e7dce6e2.jpg)<br/>
   Basic sensor circuit<br/>
-  ![ol2eccircuit](https://user-images.githubusercontent.com/58099828/128308328-2bca4169-e3de-4477-8d90-5814e7dce6e2.jpg)
+  
+  **For the demonstration, only a temperature sensor is used due to lack of availability of sensors and low accuracy of sensors built using basic circuits.**
+  
+  
 
 ### Data Labeling
 ![boundingbox](https://user-images.githubusercontent.com/58099828/129083468-037d61e1-32fd-451d-9c17-ca485d0ca21f.jpg)
@@ -74,8 +78,15 @@ More data will be gathered as the project goes on.
 
 Above two approaches are to be tested on few fish breeds and the one gives best resutls will be used to label all the data.
 
+A simple CNN is built to classify 3 fish breeds. Below graphs describe traning accuracies of the model.<br/>
+![Annotation 2021-08-18 111655](https://user-images.githubusercontent.com/58099828/129844229-07853098-4912-4996-bacc-280014c80828.jpg)
+![Annotation 2021-08-18 111708](https://user-images.githubusercontent.com/58099828/129844236-9bfcb0d7-72f0-420e-819a-3485c13a99c6.jpg) <br/>
+Considerable accuracy is acquired with few epochs. Validation accuracy varies because of less data.
+Based on the results and content of following paper, Bounding box labeling is selected to train the model.
+> J. F. Mullen, F. R. Tanner and P. A. Sallee, “Comparing the Effects of Annotation Type on Machine Learning Detection Performance,” 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 2019, pp. 855-861, doi: 10.1109/CVPRW.2019.00114.
+
 ## TimeLine <br/>
-![image](https://user-images.githubusercontent.com/58099828/129080849-8efb84a0-a30f-4434-aab4-05df9f25df07.png) <br/>
+![image](https://user-images.githubusercontent.com/58099828/129842766-a49af1f9-2eda-48f3-b019-3a30ff11fc5e.png) <br/>
 
 ## Weekly Updates
 
@@ -103,3 +114,10 @@ Above two approaches are to be tested on few fish breeds and the one gives best 
 	 - As said above only few breeds are labeled first and test it on classification to select the optimal way.<br/>
 - Started learning Flutter for developping the app.
 - Started implementing sensor node.
+
+### Week 3
+- Basic sensor node code is implemented. <br/>
+![temp test](https://user-images.githubusercontent.com/58099828/129843450-278245d5-26ae-42b6-b6ec-ea663aac5071.jpg) <br/>
+![IMG_20210818_005850](https://user-images.githubusercontent.com/58099828/129843511-602a3297-1742-4ad7-ac4b-11b4a87d7278.jpg) <br/>
+- A simple CNN is built and tested on 3 fish breeds. As explained in **Data labeling** bounding box annotation is used on the remaining data. 
+
