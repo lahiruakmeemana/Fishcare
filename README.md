@@ -78,7 +78,7 @@ More data will be gathered as the project goes on.
 
 Above two approaches are to be tested on few fish breeds and the one gives best resutls will be used to label all the data.
 
-A simple CNN is built to classify 3 fish breeds. Below graphs describe traning accuracies of the model.<br/>
+A simple CNN is built to classify 3 fish breeds using *bounding box* annotation. Below graphs describe traning accuracies of the model.<br/>
 ![Annotation 2021-08-18 111655](https://user-images.githubusercontent.com/58099828/129844229-07853098-4912-4996-bacc-280014c80828.jpg)
 ![Annotation 2021-08-18 111708](https://user-images.githubusercontent.com/58099828/129844236-9bfcb0d7-72f0-420e-819a-3485c13a99c6.jpg) <br/>
 Considerable accuracy is acquired with few epochs. Validation accuracy varies because of less data.
