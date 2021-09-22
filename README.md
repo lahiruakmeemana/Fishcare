@@ -70,7 +70,7 @@ More data will be gathered as the project goes on.
   
   **For the demonstration, only a temperature sensor is used due to lack of availability of sensors and low accuracy of sensors built using basic circuits.**
   
-  
+ 
 
 ### Data Labeling
 ![boundingbox](https://user-images.githubusercontent.com/58099828/129083468-037d61e1-32fd-451d-9c17-ca485d0ca21f.jpg)
@@ -84,6 +84,10 @@ A simple CNN is built to classify 3 fish breeds using *bounding box* annotation.
 Considerable accuracy is acquired with few epochs. Validation accuracy varies because of less data.
 Based on the results and content of following paper, Bounding box labeling is selected to train the model.
 > J. F. Mullen, F. R. Tanner and P. A. Sallee, “Comparing the Effects of Annotation Type on Machine Learning Detection Performance,” 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 2019, pp. 855-861, doi: 10.1109/CVPRW.2019.00114.
+
+### Classification
+Fish classification implemented using a CNN. As the accuracy was very low, already avaible network is considired to be used as feature extractor.
+Currently working on using ResNet50.
 
 ## TimeLine <br/>
 ![image](https://user-images.githubusercontent.com/58099828/129842766-a49af1f9-2eda-48f3-b019-3a30ff11fc5e.png) <br/>
@@ -121,3 +125,18 @@ Based on the results and content of following paper, Bounding box labeling is se
 ![IMG_20210818_005850](https://user-images.githubusercontent.com/58099828/129843511-602a3297-1742-4ad7-ac4b-11b4a87d7278.jpg) <br/>
 - A simple CNN is built and tested on 3 fish breeds. As explained in **Data labeling** bounding box annotation is used on the remaining data. 
 
+### Week 4
+- Disease data collecting
+- Learning flutter basics
+
+### Week 5
+- Started developing the app.
+- Sensor node timer and sleep implemented
+
+### Week 6
+- Firebase database is created to store temperature data.
+- Implementing sensor node comminucation with database.
+- Started working on fish classification.
+
+### Week 7
+- Implementing a CNN using already available backend eg. ResNet50
