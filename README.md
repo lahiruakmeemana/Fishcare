@@ -146,3 +146,15 @@ Currently working on using ResNet50.
 	- After 5 iterations: <br/>
 	![image](https://user-images.githubusercontent.com/58099828/134411848-ef681544-78c1-4afc-b384-4cafd94a3014.png)
 
+### Week 8
+- Temperature data visualized and observed daily patterns
+	![image](https://user-images.githubusercontent.com/58099828/137205751-e3e483e4-9d2f-4e31-b02c-342221c663d3.png)
+
+### Week 9
+- Facebook Prophet is used to forecast temperature readings.
+	- This was just to get an idea on how to do the prediction. In the final system, prediction model is trained on the app and predict future parameters.
+	![image](https://user-images.githubusercontent.com/58099828/137205989-c2fcbca1-17dd-419a-a5f0-a354c2afda35.png)
+
+### Week 10
+- Firebase connection implemented in the app.
+- Trained classification model run on app.
