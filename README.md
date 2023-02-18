@@ -70,7 +70,9 @@ More data will be gathered as the project goes on.
   
   **For the demonstration, only a temperature sensor is used due to lack of availability of sensors and low accuracy of sensors built using basic circuits.**
   
- 
+ Temperature data is collected as in the following format. ESP32 wakes up every 15 minutes and sends collected temperature data to firebase realtime database.<br/>
+![Annotation 2021-09-22 224820](https://user-images.githubusercontent.com/58099828/134392600-399ea873-41ad-4963-a6cd-664398c448d7.jpg)
+
 
 ### Data Labeling
 ![boundingbox](https://user-images.githubusercontent.com/58099828/129083468-037d61e1-32fd-451d-9c17-ca485d0ca21f.jpg)
@@ -126,17 +128,33 @@ Currently working on using ResNet50.
 - A simple CNN is built and tested on 3 fish breeds. As explained in **Data labeling** bounding box annotation is used on the remaining data. 
 
 ### Week 4
-- Disease data collecting
-- Learning flutter basics
+- Disease data collecting. 350 images collected from above mentioned sources.
+- Learning flutter basics.
 
 ### Week 5
 - Started developing the app.
-- Sensor node timer and sleep implemented
+- Sensor node timer and sleep implemented.
+	- 15 minutes timer is set. Node wakes up and measures temperature.
 
 ### Week 6
-- Firebase database is created to store temperature data.
-- Implementing sensor node comminucation with database.
+- Firebase database is created to store temperature data. 
+	- Node sends data to firebase database every 15 minutes. 
 - Started working on fish classification.
 
 ### Week 7
-- Implementing a CNN using already available backend eg. ResNet50
+- Implementing a CNN using already available backend eg. ResNet50,VGG16
+	- After 5 iterations: <br/>
+	![image](https://user-images.githubusercontent.com/58099828/134411848-ef681544-78c1-4afc-b384-4cafd94a3014.png)
+
+### Week 8
+- Temperature data visualized and observed daily patterns
+	![image](https://user-images.githubusercontent.com/58099828/137205751-e3e483e4-9d2f-4e31-b02c-342221c663d3.png)
+
+### Week 9
+- Facebook Prophet is used to forecast temperature readings.
+	- This was just to get an idea on how to do the prediction. In the final system, prediction model is trained on the app and predict future parameters.
+	![image](https://user-images.githubusercontent.com/58099828/137205989-c2fcbca1-17dd-419a-a5f0-a354c2afda35.png)
+
+### Week 10
+- Firebase connection implemented in the app.
+- Trained classification model run on app.
